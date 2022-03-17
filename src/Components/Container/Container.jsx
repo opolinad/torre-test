@@ -20,14 +20,14 @@ export default function Container() {
     }
     return (<div id="cont-container">
         <Navigation getUserInfo={getUserInfo} />
-        <div id="user-info-cont">
+        {userInfo.name && <div id="user-info-cont">
             <div id="photo-container">
                 <img src={userInfo.img} alt="profile picture" />
                 <img id="photo-frame" src={photoframe} alt="picture frame" />
             </div>
             <h2>{userInfo.name}</h2>
-        </div>
-        <p id="section-title">Skills and interests:</p>
+        </div>}
+        {userInfo.name && <p id="section-title">Skills and interests:</p>}
         <div id="user-interest-cont">
             {userInfo.strenghts.master && <div id="skill-master">
                 <p className="skill-experience-title">
