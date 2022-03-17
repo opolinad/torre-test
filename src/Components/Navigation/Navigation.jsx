@@ -17,9 +17,9 @@ export default function Navigation({getUserInfo}) {
     }
     return (<div id="nav-container">
         <img src={torreImg} alt="Torre logo" />
-        <h1><b>torre</b>.co</h1>
+        <h1><b>torre</b><span id="span-co">.co</span></h1>
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name-search" id="name-search" placeholder="Search for name" value={input} onChange={handleChange}/>
+            <input type="text" name="name-search" id="name-search" placeholder="Search for username" value={input} onChange={handleChange}/>
             <button type="submit">
                 <IconContext.Provider value={{ color: "white" }}>
                     <FaSearch />
@@ -27,6 +27,6 @@ export default function Navigation({getUserInfo}) {
             </button>
 
         </form>
-        <span>SIGN IN</span>
+        <span id="span-sign">SIGN IN</span>
     </div>)
 }
