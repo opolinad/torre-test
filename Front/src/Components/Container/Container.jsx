@@ -18,7 +18,7 @@ export default function Container() {
     });
     async function getUserInfo(user) {
         try {
-            let info = await axios(`http://localhost:3001/${user}`);
+            let info = await axios(`https://torre-technical.herokuapp.com/${user}`);
             setUserInfo(info.data);
         } catch (error) {
             alert("No se ha encontrado al usuario", error);
