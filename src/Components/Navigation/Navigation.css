@@ -1,0 +1,54 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+#nav-container{
+    /* background-color: red; */
+    height: 7vh;
+    width: 50vw;
+    border-right: 3px solid white;
+}
+
+#nav-container h1{
+    font-weight: lighter;
+    margin: 0;
+    float: left;
+    padding: 0.6vh 1vw;
+}
+#nav-container img{
+    max-height: 5vh;
+    float: left;
+    margin: 0%;
+    padding: 1vh;
+}
+#nav-container span{
+    float: right;
+    margin-top: -0.6vh;
+    margin-right: 1vw;
+    font-weight: bolder;
+}
+#nav-container form{
+    position: relative;
+    top: 2vh;
+    left:2vw;
+}
+#nav-container input{
+    background-color: transparent;
+    width: 12vw;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+#nav-container input::placeholder{
+    color: rgba(158, 158, 158,0.6);
+}
+#nav-container input:focus{
+    outline: none;
+}
+#nav-container button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
