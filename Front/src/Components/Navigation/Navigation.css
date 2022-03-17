@@ -3,6 +3,7 @@ body{
     margin: 0;
     background-color: #27292D;
     color: #A7A7A9;
+    overflow: hidden;
 }
 #nav-container{
     height: 7vh;
@@ -57,4 +58,3 @@ body{
     color: #CDDC39;
     margin: 0;
 }
-
